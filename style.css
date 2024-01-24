@@ -1,0 +1,110 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, violet, rgb(212, 190, 227), rgb(128, 225, 128), rgb(234, 234, 111), rgb(237, 190, 102));
+}
+
+header {
+    background: rgb(172, 172, 20);
+    background-color: rgb (0 0 0 /10%);
+    border: 2px solid;
+    box-shadow: 0 0 10px rgb(238, 238, 208);
+    color:rgb(200, 200, 128);
+    padding: 10px;
+    opacity: 60%;
+    text-align: center;
+}
+header h1 {
+  color: crimson;
+  font-size: 40px;
+  font-family: cursive;
+}
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+    border: 2px solid beige;
+    padding: 2px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+.hero, .about, .portfolio, .contact {
+    text-align: center;
+    padding: 50px;
+    color: white;
+}
+
+.project {
+    margin-top: 20px;
+}
+.project img {
+    margin-top: 20px;
+    cursor: pointer;
+}
+/* Add more styles as needed */
+.image-stack {
+    position: relative;
+  }
+  
+  .project .image1 {
+    position: absolute;
+    width: 500px;
+    height: 300px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    top:330px;
+    left: 530px;
+    z-index:-1;
+  }
+  .project .image2 {
+    position: absolute;
+    width: 500px;
+    height: 300px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    top:300px;
+    left: 570px;
+    z-index:-2;
+  }
+  .project .image {
+    position: absolute;
+    width: 500px;
+    height: 300px;
+    cursor: pointer;
+    top:370px;
+    left: 480px;
+    z-index:0;
+  }
+  #overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index:-1;
+  }
+  
+  #zoom-container {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+  }
+  
+  #zoomed-image {
+    max-width: 80vw;
+    max-height: 80vh;
+    cursor: pointer;
+  }

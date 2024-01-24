@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Ayushi Saxena - Portfolio</title>
+</head>
+<body>
+    <header>
+        <h1>Ayushi Saxena</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="portfolio.html" class="active">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="portfolio">
+        <div class="project">
+            <h2>BeSmart</h2>
+            <a href="https://ayushi-121.github.io/BeSmart/">Click to view</a><br>
+            <img src="BeSmart3.png" alt="Image 1" width="400px" height="200px" class="image" onclick="zoomImage(this)">
+            <img src="BeSmart1.png" alt="Image 2" width="400px" height="200px" class="image1" onclick="zoomImage(this)">
+            <img src="BeSmart2.png" alt="Image 3" width="400px" height="200px" class="image2" onclick="zoomImage(this)">
+        </div> 
+        <div id="overlay" onclick="closeZoom()"></div>
+        <div id="zoom-container">
+          <img id="zoomed-image" onclick="closeZoom()">
+        </div>
+  </section>
+  <!-- Add more content as needed -->
+  <script src="script.js"></script>
+</body>
+</html>
